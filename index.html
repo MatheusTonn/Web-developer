@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+        <form class="form" id="formulario">
+            <label for="inputName">Nome</label>
+            <input type="text" class="inputs" id="inputName" placeholder="Digite seu nome completo" oninput="validName()">
+            <span class="spans">O nome deve ter mais de 3 caracteres</span>
+
+            <label for="inputEmail">Email</label>
+            <input type="email" class="inputs" id="inputEmail" placeholder="Digite seu e-mail" oninput="validEmail()">
+            <span class="spans">Digite um email válido</span>
+
+            <label for="inputPhone">Telefone</label>
+            <input type="number" class="inputs" id="inputPhone" placeholder="(00) 0000-0000" oninput="validPhone()">
+            <span class="spans">Digite um telefone válido</span>
+
+            <label for="inputPassword">Senha</label>
+            <input type="password" class="inputs" id="inputPassword" placeholder="Digite sua senha" oninput="validPassword()">
+            <span class="spans">A senha deve ter mais de 8 caracteres</span>
+            
+            <label for="inputConfirmPassword">Confirmar Senha</label>
+            <input type="password" class="inputs" id="inputConfirmPassword" placeholder="Confirme sua senha" oninput="validConfirmPassword()">
+            <span class="spans">As senhas devem ser compatíveis</span>
+
+            <button type="submit" id="buttonConfirm">Enviar</button>
+        </form>
+    </div>
+
+    <script src="validacao.js"></script>
+</body>
+</html>
